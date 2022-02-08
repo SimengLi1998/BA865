@@ -233,7 +233,7 @@ class Comm100Processor(DataProcessor):
 
     def get_test_examples(self, data_dir):
         """See base class."""
-        lines = self._read_tsv("../data/test.txt")
+        lines = self._read_tsv("/content/Data/test.txt")
         examples = []
         for (i, line) in enumerate(lines):
             guid = "test-%d" % i
