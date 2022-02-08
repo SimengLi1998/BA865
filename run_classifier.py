@@ -211,7 +211,7 @@ class Comm100Processor(DataProcessor):
 
     def get_train_examples(self, data_dir):
         """See base class."""
-        lines = self._read_tsv("../data/train.txt")
+        lines = self._read_tsv("/content/Data/train.txt")
         examples = []
         for (i, line) in enumerate(lines):
             guid = "train-%d" % i
@@ -222,7 +222,7 @@ class Comm100Processor(DataProcessor):
 
     def get_dev_examples(self, data_dir):
         """See base class."""
-        lines = self._read_tsv("../data/test.txt")
+        lines = self._read_tsv("/content/Data/test.txt")
         examples = []
         for (i, line) in enumerate(lines):
             guid = "dev-%d" % i
